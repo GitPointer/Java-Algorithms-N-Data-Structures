@@ -1,4 +1,4 @@
-## Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer
+## Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer.
 
 [You Tube Link](https://www.youtube.com/watch?v=RBSGKlAvoiM&t=1358s)
 
