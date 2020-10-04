@@ -3,3 +3,4 @@ image:
 
 tasks:
   - init: mvn install -DskipTests=false
+  - command: cd '/workspace/Java-Algorithms-N-Data-Structures' && env '/home/gitpod/.sdkman/candidates/java/current/bin/java' '-Dfile.encoding=UTF-8' '-cp' '/workspace/Java-Algorithms-N-Data-Structures/target/classes' 'com.my.ic.ds.BinarySearch'
