@@ -93,21 +93,6 @@ public class MergeMeetings {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // tests
 
     public void meetingsOverlapTest() {
