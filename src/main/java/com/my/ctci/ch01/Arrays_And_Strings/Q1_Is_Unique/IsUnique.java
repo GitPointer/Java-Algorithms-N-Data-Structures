@@ -72,6 +72,9 @@ public class IsUnique {
 	/*
 	 * Approach 4 – Without Extra Data Structure: 
 	 * Time Complexity: O(n)  
+	 * Explanation:
+	 * https://stackoverflow.com/questions/9141830/explain-the-use-of-a-bit-vector-for-determining-if-all-characters-are-unique/41905456#41905456
+	 * 
 	 */
 	
 	/* Assumes only letters a through z. */
