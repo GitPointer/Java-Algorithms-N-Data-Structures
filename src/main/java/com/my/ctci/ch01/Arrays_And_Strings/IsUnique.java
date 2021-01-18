@@ -1,4 +1,4 @@
-package com.my.ctci.ch01.Arrays_And_Strings.Q1_Is_Unique;
+package com.my.ctci.ch01.Arrays_And_Strings;
 
 import java.util.Arrays;
 
