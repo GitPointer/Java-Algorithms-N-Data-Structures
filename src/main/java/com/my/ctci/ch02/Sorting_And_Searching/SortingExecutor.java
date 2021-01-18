@@ -25,7 +25,7 @@ public class SortingExecutor {
 		System.out.println("After Sorting:" + Arrays.toString(arr));
 		
 		
-		System.out.println("[******SelectionSort******]");
+		System.out.println("[******InsertionSort******]");
 		arr = Arrays.copyOf(data, data.length);
 		sorting=new InsertionSort();
 		System.out.println("Before Sorting:" + Arrays.toString(arr));
