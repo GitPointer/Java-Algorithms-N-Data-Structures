@@ -6,7 +6,6 @@ import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.Interface.SortingInter
 import com.my.ctci.util.MergeSortTracer;
 
 public class MergeSort implements SortingInterface {
-	
 
 	@Override
 	public void doSort(int[] arr) {
@@ -14,26 +13,23 @@ public class MergeSort implements SortingInterface {
 		mergeSort(arr, helper, 0, arr.length - 1);
 
 	}
-	
-
 
 	void mergeSort(int[] arr, int[] helper, int l, int r) {
 		if (l < r) {
 			int mid = (l + r) / 2;
-			MergeSortTracer.trace(arr, helper, l,mid, r,MergeSortTracer.step.Divide);
+			MergeSortTracer.trace(arr, helper, l, mid, r, MergeSortTracer.step.Divide);
 			mergeSort(arr, helper, l, mid);
 			mergeSort(arr, helper, mid + 1, r);
 			merge(arr, helper, l, mid, r);
 		}
 	}
 
-
 	void merge(int[] arr, int[] helper, int l, int mid, int r) {
 		// Copy both halves into the helper array
 		for (int i = l; i <= r; i++) {
 			helper[i] = arr[i];
 		}
-		MergeSortTracer.trace(arr, helper, l,mid, r,MergeSortTracer.step.Merge);
+		MergeSortTracer.trace(arr, helper, l, mid, r, MergeSortTracer.step.Merge);
 
 		int helperLeft = l;
 		int helperRight = mid + 1;
@@ -53,7 +49,7 @@ public class MergeSort implements SortingInterface {
 			}
 			current++;
 		}
-		MergeSortTracer.trace(arr, helper, l,mid, r,MergeSortTracer.step.AfterMerge);
+		MergeSortTracer.trace(arr, helper, l, mid, r, MergeSortTracer.step.AfterMerge);
 
 		/*
 		 * Copy the rest of the left side of the array into the target array
@@ -62,7 +58,7 @@ public class MergeSort implements SortingInterface {
 		for (int i = 0; i <= remaining; i++) {
 			arr[current + i] = helper[helperLeft + i];
 		}
-		MergeSortTracer.trace(arr, helper, helperLeft,mid, r,MergeSortTracer.step.CopyAfterMerge);
+		MergeSortTracer.trace(arr, helper, helperLeft, mid, r, MergeSortTracer.step.CopyAfterMerge);
 
 	}
 

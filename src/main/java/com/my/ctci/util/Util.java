@@ -1,7 +1,7 @@
 package com.my.ctci.util;
 
 public class Util {
-	
+
 	public static String charArrayToString(char[] array) {
 		StringBuilder buffer = new StringBuilder(array.length);
 		for (char c : array) {
