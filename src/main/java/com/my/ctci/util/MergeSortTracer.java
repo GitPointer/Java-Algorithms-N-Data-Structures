@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MergeSortTracer {
 	
-	public static boolean isTraceable=false;
+	public static boolean isTraceable=true;
 
 	public static enum step{
 		Divide,

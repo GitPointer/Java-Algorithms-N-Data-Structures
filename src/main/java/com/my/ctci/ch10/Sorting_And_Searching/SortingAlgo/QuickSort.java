@@ -1,5 +1,7 @@
 package com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo;
 
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.Interface.SortingInterface;
+
 public class QuickSort implements SortingInterface {
 
 	@Override

@@ -1,7 +1,13 @@
-package com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo;
+package com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.Executor;
 
 import java.util.Arrays;
 
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.BubbleSort;
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.InsertionSort;
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.MergeSort;
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.QuickSort;
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.SelectionSort;
+import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.Interface.SortingInterface;
 import com.my.ctci.util.MergeSortTracer;
 
 public class SortingExecutor {
@@ -45,7 +51,7 @@ public class SortingExecutor {
 		arr = Arrays.copyOf(data, data.length);
 		sorting=new MergeSort();
 		System.out.println("Before Sorting:" + Arrays.toString(arr));
-		MergeSortTracer.isTraceable=false;
+		//MergeSortTracer.isTraceable=false;
 		sorting.doSort(arr);
 		System.out.println("After Sorting:" + Arrays.toString(arr));
 	}
