@@ -1,9 +1,6 @@
 package com.my.ic.ds;
 
-/**
- * @author vikas_tandon
- *
- */
+
 public class BinarySearch {
 	
 	public static boolean binarySearch(int srchEle, int arry[]) {
