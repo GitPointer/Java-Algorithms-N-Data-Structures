@@ -8,7 +8,6 @@ import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.MergeSort;
 import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.QuickSort;
 import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.SelectionSort;
 import com.my.ctci.ch10.Sorting_And_Searching.SortingAlgo.Interface.SortingInterface;
-import com.my.ctci.util.MergeSortTracer;
 
 public class SortingExecutor {
 
