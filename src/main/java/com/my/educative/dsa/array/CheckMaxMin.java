@@ -1,4 +1,4 @@
-package com.my.educative.dsa;
+package com.my.educative.dsa.array;
 
 public class CheckMaxMin {
     public static void main(String[] args){
@@ -44,8 +44,6 @@ public class CheckMaxMin {
                 minIdx += 1;
               }
             }
-        
-            
             // dividing with maxElem to get original values.
             for( int i = 0; i < arr.length; i++) {
               arr[i] = arr[i] / maxElem;

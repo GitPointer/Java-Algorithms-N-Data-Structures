@@ -1,4 +1,4 @@
-package com.my.educative.dsa;
+package com.my.educative.dsa.array;
 
 public class MergeSortedArray {
     public static void main(String[] args) {
