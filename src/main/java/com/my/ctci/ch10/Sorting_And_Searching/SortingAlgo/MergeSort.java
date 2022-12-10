@@ -63,8 +63,8 @@ public class MergeSort implements SortingInterface {
 	}
 
 	public static void main(String[] args) {
-		// int[] arr=new int[]{2,3,4,5,6};
-		int[] arr = new int[] { 14, 2, 0, 2, 11, 12, 10, 4, 0, 3, 11, 2, 10, 9, 5, 8, 14, 19, 2, 1 };
+		 int[] arr=new int[]{2,3,4,5,6};
+		 //int[] arr = new int[] { 14, 2, 0, 2, 11, 12, 10, 4, 0, 3, 11, 2, 10, 9, 5, 8, 14, 19, 2, 1 };
 		SortingInterface sorting = new MergeSort();
 		System.out.println("Before Sorting:" + Arrays.toString(arr));
 		sorting.doSort(arr);
