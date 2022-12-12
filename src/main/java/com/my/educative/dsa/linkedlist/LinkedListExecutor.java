@@ -4,9 +4,29 @@ package com.my.educative.dsa.linkedlist;
 public class LinkedListExecutor {
    public static void main(String[] args) {
    //singlyExecutor();
-   doulblyExecutor();
-
+   //doulblyExecutor();
+    singlyWithTailExecutor();
    }
+    
+
+
+
+    private static void singlyWithTailExecutor() {
+      var singlyLinkedListWithTail = new SinglyLinkedListWithTail<String>();
+      singlyLinkedListWithTail.insertAtHead("Keshav1");
+      singlyLinkedListWithTail.insertAtHead("Vikas1");
+
+      
+      // singlyLinkedListWithTail.insertAtEnd("Vikas");
+      // singlyLinkedListWithTail.insertAtEnd("Keshav");
+
+      //  singlyLinkedListWithTail.insertAfter("Tripti", "Keshav");
+
+       singlyLinkedListWithTail.deleteWithValue("Keshav1");;
+       System.out.println(singlyLinkedListWithTail.getTail().data);
+
+  }
+
 
    private static void doulblyExecutor() {
       DoublyLinkedList<String>  doublyLinkedList = new DoublyLinkedList<String>();
