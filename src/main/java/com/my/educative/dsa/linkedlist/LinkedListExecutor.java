@@ -12,7 +12,7 @@ public class LinkedListExecutor {
 
 
     private static void singlyWithTailExecutor() {
-      var singlyLinkedListWithTail = new SinglyLinkedListWithTail<String>();
+      SinglyLinkedListWithTail<String> singlyLinkedListWithTail = new SinglyLinkedListWithTail<String>();
       singlyLinkedListWithTail.insertAtHead("Keshav1");
       singlyLinkedListWithTail.insertAtHead("Vikas1");
 
@@ -57,7 +57,7 @@ public class LinkedListExecutor {
    }
 
    private static void singlyExecutor() {
-      var singlyLinkedList = new SinglyLinkedList<String>();
+	   SinglyLinkedList<String> singlyLinkedList = new SinglyLinkedList<String>();
       System.out.println(singlyLinkedList.isEmpty());
 
       singlyLinkedList.insertAtHead("Vikas1");

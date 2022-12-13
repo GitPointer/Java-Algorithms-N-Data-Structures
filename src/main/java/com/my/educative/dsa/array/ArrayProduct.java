@@ -12,6 +12,8 @@ public class ArrayProduct {
 			System.out.println(i);
 		}
 	}
+	
+
 
 	public int[] arrayProduct(int[] arr) {
 		// arr = {1,2,3,4}

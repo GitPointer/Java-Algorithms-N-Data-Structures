@@ -68,7 +68,7 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 
 	@Override
 	public boolean searchNode(T data) {
-		var currNode = headNode;
+		Node currNode = headNode;
 		while (currNode != null) {
 			if (currNode.data.equals(data)) {
 				return true;
