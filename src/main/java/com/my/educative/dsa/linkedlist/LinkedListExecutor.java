@@ -1,32 +1,11 @@
-package com.my.educative.dsa.linkedlist; 
-
+package com.my.educative.dsa.linkedlist;
 
 public class LinkedListExecutor {
-   public static void main(String[] args) {
-   //singlyExecutor();
-   //doulblyExecutor();
-    singlyWithTailExecutor();
-   }
-    
+	public static void main(String[] args) {
+		// singlyExecutor();
+		doulblyExecutor();
 
-
-
-    private static void singlyWithTailExecutor() {
-      var singlyLinkedListWithTail = new SinglyLinkedListWithTail<String>();
-      singlyLinkedListWithTail.insertAtHead("Keshav1");
-      singlyLinkedListWithTail.insertAtHead("Vikas1");
-
-      
-      // singlyLinkedListWithTail.insertAtEnd("Vikas");
-      // singlyLinkedListWithTail.insertAtEnd("Keshav");
-
-      //  singlyLinkedListWithTail.insertAfter("Tripti", "Keshav");
-
-       singlyLinkedListWithTail.deleteWithValue("Keshav1");;
-       System.out.println(singlyLinkedListWithTail.getTail().data);
-
-  }
-
+	}
 
    private static void doulblyExecutor() {
       DoublyLinkedList<String>  doublyLinkedList = new DoublyLinkedList<String>();
@@ -56,9 +35,9 @@ public class LinkedListExecutor {
 
    }
 
-   private static void singlyExecutor() {
-      var singlyLinkedList = new SinglyLinkedList<String>();
-      System.out.println(singlyLinkedList.isEmpty());
+	private static void singlyExecutor() {
+		SinglyLinkedList<String> singlyLinkedList = new SinglyLinkedList<String>();
+		System.out.println(singlyLinkedList.isEmpty());
 
       singlyLinkedList.insertAtHead("Vikas1");
       singlyLinkedList.insertAtHead("Keshav1");
