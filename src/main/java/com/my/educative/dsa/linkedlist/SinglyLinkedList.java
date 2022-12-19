@@ -2,7 +2,7 @@ package com.my.educative.dsa.linkedlist;
 
 public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 
-	class Node {
+	public class Node {
 		T data;
 		Node nextNode;
 	}
@@ -141,6 +141,26 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 			size--;
 		}
 
+	}
+
+	public void reverseLinkedList() {
+
+		  // justheadNode = headNode; // 4
+          // headNode = startingPointer; // 6
+          // headNode.next = justheadNode; // 4
+          // prevPointer.next = startingPointer.next; // 5
+          // startingPointer = startingPointer.next; // 5
+          Node prevNode = null;
+		  Node current = headNode;
+		  Node next = null ;
+
+		  while (current!= null) {
+			 next = current.nextNode;
+			 current.nextNode = prevNode;
+			 prevNode = current;
+			 current = next;			 
+		  }
+		  headNode = prevNode;
 	}
 
 }
