@@ -2,7 +2,7 @@ package com.my.educative.dsa.linkedlist;
 
 public class LinkedListExecutor {
 	public static void main(String[] args) {
-		// singlyExecutor();
+		 singlyExecutor();
 		doulblyExecutor();
 
 	}

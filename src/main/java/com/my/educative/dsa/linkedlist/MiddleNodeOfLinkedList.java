@@ -5,7 +5,7 @@ public class MiddleNodeOfLinkedList  {
    SinglyLinkedList<Integer> singlyLinkedList = singlyExecutor();
    SinglyLinkedList<Integer>.Node  middleNode =  getMiddleNodeOptimizedSolution(singlyLinkedList);
    if (middleNode != null) {
-      System.out.println("MiddleNode data is "+ middleNode.data);
+     // System.out.println("MiddleNode data is "+ middleNode.data);
    }
    }
 
