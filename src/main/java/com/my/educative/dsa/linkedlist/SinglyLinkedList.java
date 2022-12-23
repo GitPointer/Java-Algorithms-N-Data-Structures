@@ -30,6 +30,29 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 
 	}
 
+	public void insertAtEndAndLinkTo(T insertData,T LinkData){
+		Node linkToNode=searchAndGetNode(LinkData);
+		Node insertedNode=insertAtAndGetEndNode(insertData);
+		insertedNode.nextNode=linkToNode;
+	}
+
+	public Node insertAtAndGetEndNode(T data) {
+		Node node = new Node();
+		node.data = data;
+		if (headNode == null) {
+			headNode = node;
+		} else {
+			Node temp = headNode;
+			while (temp.nextNode != null) {
+				temp = temp.nextNode;
+			}
+			temp.nextNode = node;
+		}
+
+		size++;
+		return node;
+	}
+
 	@Override
 	public void insertAtEnd(T data) {
 		Node node = new Node();
@@ -76,6 +99,17 @@ public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 			currNode = currNode.nextNode;
 		}
 		return false;
+	}
+
+	public Node searchAndGetNode(T data) {
+		Node currNode = headNode;
+		while (currNode != null) {
+			if (currNode.data.equals(data)) {
+				return currNode;
+			}
+			currNode = currNode.nextNode;
+		}
+		return null;
 	}
 
 	@Override

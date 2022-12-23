@@ -1,4 +1,4 @@
-package com.my.leetcode;
+package com.my.leetcode.old;
 
 public class IPAddressValidator {
 
