@@ -4,16 +4,15 @@ import java.util.HashSet;
 
 public class RemoveDuplicate {
    public static void main(String[] args) {
-      RemoveDuplicate removeDuplicate = new RemoveDuplicate() ;
       SinglyLinkedList<Integer> singlyLinedList = singlyExecutor();
       System.out.println("Before Removing------------");
       LinkedListUtil.printSinglyLinkedList(singlyLinedList);     
-      removeDuplicate.removeDuplicate(singlyLinedList);
+      RemoveDuplicate.removeDuplicate(singlyLinedList);
       System.out.println("After Removing------------");
       LinkedListUtil.printSinglyLinkedList(singlyLinedList);     
    }
 
-   public void removeDuplicate(SinglyLinkedList<Integer> sll) {
+   public static void removeDuplicate(SinglyLinkedList<Integer> sll) {
    HashSet<Integer> hashset = new HashSet<Integer>();
    SinglyLinkedList<Integer>.Node currNode = sll.getHead();
    SinglyLinkedList<Integer>.Node prevNode = null;
