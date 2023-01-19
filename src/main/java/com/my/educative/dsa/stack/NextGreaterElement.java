@@ -30,7 +30,4 @@ public class NextGreaterElement {
        }
        return resultArr;
     }
-    
-
-
 }
