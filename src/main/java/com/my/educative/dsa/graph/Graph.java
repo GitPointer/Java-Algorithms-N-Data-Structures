@@ -22,9 +22,15 @@ public class Graph {
      }
    }
 
-
+   public void printDirectedGraph() {
+    System.out.println(">>>Adjacency is of Directed graph<<<<<");
+    printGraph();
+   }
+   public void printUndirectedGraph() {
+    System.out.println(">>>Adjacency is of Undirected graph<<<<<");
+    printGraph();
+   }
    public void printGraph() {
-     System.out.println(">>>Adjancey is of directed graph<<<<<");
      for(int i = 0; i< vertices; i++) {
        if (adjacentList[i] != null) {
         System.out.print("|"+i+"|=>");
