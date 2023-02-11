@@ -18,7 +18,6 @@ public class DFS {
         g.printGraph();
         System.out.println("DFS traversal of Graph1 : " + dfs(g));
         System.out.println();
-        System.out.println("This graph is cyclic? : " + isCycle(g));
     }
 
     private static String dfs(Graph g) {
