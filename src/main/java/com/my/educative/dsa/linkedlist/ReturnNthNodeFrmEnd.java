@@ -1,8 +1,8 @@
 package com.my.educative.dsa.linkedlist;
 
-public class ReturnNthNode {
+public class ReturnNthNodeFrmEnd {
     public static void main(String[] args) {
-        ReturnNthNode returnNthNode = new ReturnNthNode() ;
+        ReturnNthNodeFrmEnd returnNthNode = new ReturnNthNodeFrmEnd() ;
         SinglyLinkedList<Integer> singlyExecutor = singlyExecutor();
         int nthNodeData = returnNthNode.returnTheNthNode(singlyExecutor, 10);
         System.out.println("Node date is " + nthNodeData);
